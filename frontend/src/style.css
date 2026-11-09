@@ -1,0 +1,26 @@
+/* src/style.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { font-family: Inter, 'Noto Sans SC', system-ui, sans-serif; color: #0F172A; font-synthesis: none; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; background: #f8fafc; }
+*, *::before, *::after { box-sizing: border-box; }
+::selection { background: #C80000; color: #fff; }
+:focus-visible { outline: 3px solid #C80000; outline-offset: 3px; }
+section[id] { scroll-margin-top: 5rem; }
+.container-site { @apply mx-auto w-full max-w-7xl px-5 md:px-8 lg:px-10; }
+.section-pad { @apply py-20 md:py-28; }
+.section-kicker { @apply mb-4 text-xs font-bold uppercase tracking-[0.3em] text-brand-red; }
+.section-title { @apply text-3xl font-black leading-tight tracking-tight text-brand-navy md:text-5xl; }
+.section-copy { @apply text-base leading-8 text-slate-600 md:text-lg; }
+.eyebrow-line { @apply mb-7 h-1 w-12 bg-brand-red; }
+.btn-primary { @apply inline-flex items-center justify-center rounded-full bg-brand-red px-7 py-3.5 text-sm font-bold text-white transition hover:bg-red-700; }
+.btn-outline { @apply inline-flex items-center justify-center rounded-full border border-current px-7 py-3.5 text-sm font-bold transition hover:bg-white hover:text-brand-navy; }
+.reveal { opacity: 0; transform: translateY(30px); transition: opacity .75s ease, transform .75s ease; }
+.reveal.is-visible { opacity: 1; transform: translateY(0); }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+}

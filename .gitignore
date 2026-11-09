@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.vite/
+__pycache__/
+*.py[cod]
+.screenshots/
+.trae-html-share-packages/
+.env
+.env.*
+!.env.example
+.DS_Store
+frontend/public/images/*.pptx
