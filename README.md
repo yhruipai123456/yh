@@ -13,6 +13,13 @@ npm install
 npm run dev
 ```
 
+# 终端1：后端
+cd backend
+py -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+
+# 终端2：前端
+npm run dev
+
 开发服务器默认使用 5173 端口，并将 `/api` 请求代理到 `http://127.0.0.1:8000`。后端启动方式见 [backend/README.md](backend/README.md)。
 
 ## 前端构建
