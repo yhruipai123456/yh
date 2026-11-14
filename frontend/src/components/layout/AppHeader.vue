@@ -15,8 +15,7 @@ function closeMenu() { open.value = false }
   <header class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/95 shadow-sm backdrop-blur">
     <div class="container-site flex h-[72px] items-center justify-between gap-5">
       <a href="#home" class="flex shrink-0 items-center gap-3" aria-label="亿鸿皮具，返回首页" @click="closeMenu">
-        <span class="grid h-10 w-10 place-items-center rounded-lg bg-brand-red text-xl font-black text-white">R</span>
-        <span class="leading-tight"><strong class="block text-lg font-black tracking-tight text-brand-navy">RUIPAI 瑞牌</strong><small class="text-[10px] tracking-[.18em] text-slate-500">YIHONG LEATHER GOODS</small></span>
+        <img src="/logo.png" alt="亿鸿皮具 RUIPAI 瑞牌 新一代护体书包" class="h-12 w-auto object-contain" />
       </a>
       <nav class="hidden items-center gap-6 lg:flex" aria-label="主导航">
         <a v-for="link in links" :key="link.href" :href="link.href" class="text-sm font-semibold text-slate-700 transition hover:text-brand-red">{{ link.label }}</a>
