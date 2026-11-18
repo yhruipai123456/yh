@@ -8,5 +8,7 @@ __pycache__/
 .env
 .env.*
 !.env.example
+# MySQL 数据目录（绑定挂载在项目内，不纳入版本管理）
+data/
 .DS_Store
 frontend/public/images/*.pptx
